@@ -15,7 +15,7 @@ E.g: Encrypt your drive with bitlocker then use this program to add an extra sec
 2) No need to delete your decrypted text after you've read it
 3) Leaves no footprint like temp files
 4) No network connections 
-5) Meaningless name random file name inside the zip file
+5) Meaningless random file name inside the zip file
 
 **Usage:**<br/>
 To generate the bin files use the following gradle tasks and check the ./build folder:<br/>
