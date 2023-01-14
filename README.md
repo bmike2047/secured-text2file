@@ -19,7 +19,7 @@ E.g: Encrypt your drive with bitlocker then use this program to add an extra sec
 
 **Usage:**<br/>
 To generate the bin files use the following gradle tasks:<br/>
-installDist for a java distribution.
+installDist for a java distribution.<br/>
 jlinkZip to generate native OS executable.
 
 
