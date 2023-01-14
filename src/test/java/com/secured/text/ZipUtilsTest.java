@@ -1,6 +1,5 @@
-package org.secured.text;
+package com.secured.text;
 
-import com.secured.text.ZipUtils;
 import net.lingala.zip4j.model.enums.AesKeyStrength;
 import net.lingala.zip4j.model.enums.CompressionMethod;
 import net.lingala.zip4j.model.enums.EncryptionMethod;
