@@ -14,7 +14,7 @@ import java.nio.file.Paths;
 import java.util.logging.Logger;
 
 public class ZipUtilsTest {
-    public static final Logger L = Logger.getLogger("org.secured.text");
+    public static final Logger L = Logger.getLogger("com.secured.text");
     @Test
     void testEncryptionBiDirectional() throws Exception {
         Path path = Paths.get("test.zip");

@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class SecuredTextController {
-    public static final Logger LOG = Logger.getLogger("org.secured");
+    public static final Logger LOG = Logger.getLogger("com.secured.text");
     private final static String STATUS = "Status: ";
     @FXML
     private Label statusLabel;
