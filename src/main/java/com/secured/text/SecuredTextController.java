@@ -42,6 +42,7 @@ public class SecuredTextController {
         radioDecrypt.setSelected(true);
         fileNameField.setText("info.bin");
         statusLabel.setStyle("-fx-font-weight: bold;");
+        textArea.setWrapText(true);
     }
 
     /**

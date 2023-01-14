@@ -1,4 +1,4 @@
-module com.secured {
+module com.secured.text {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.logging;
