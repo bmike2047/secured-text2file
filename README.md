@@ -6,7 +6,7 @@ Can be used as a password manager also.<br/>
 Output file defaults to info.bin in the current directory. This can be changed if needed. <br/>
 While there are a lot of self-extracting archive managers with encryption, this little 
 program has the advantage that it extracts and display the content of the encrypted file in his little frame without the need to use an external text editor.<br/>
-This eliminates the need to delete the raw sensible file after visualization that can lead to other security problems, like forgetting to empty the recycle bin.<br/>
+This eliminates the step to delete the raw sensible file after visualization/decryption that can lead to other security problems, like forgetting to empty the recycle bin.<br/>
 
 E.g: Encrypt your drive with bitlocker then use this program to add an extra security layer for your important text/passwords.
 
