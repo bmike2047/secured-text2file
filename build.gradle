@@ -18,8 +18,8 @@ ext {
     junitVersion = '5.9.1'
 }
 
-sourceCompatibility = '18'
-targetCompatibility = '18'
+sourceCompatibility = '17'
+targetCompatibility = '17'
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
@@ -32,7 +32,7 @@ application {
 }
 
 javafx {
-    version = '18.0.2'
+    version = '21'
     modules = ['javafx.controls', 'javafx.fxml']
 }
 

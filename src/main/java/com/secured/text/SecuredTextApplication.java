@@ -11,7 +11,7 @@ public class SecuredTextApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(SecuredTextApplication.class.getResource("secured-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 650, 600);
+        Scene scene = new Scene(fxmlLoader.load(), 700, 600);
         stage.setTitle("Secured Text 2 File v2");
         stage.setScene(scene);
         stage.show();
