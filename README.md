@@ -22,6 +22,7 @@ To generate the bin files use the following gradle tasks and check the ./build f
 installDist for a java distribution.<br/>
 jlinkZip to generate native OS executable.
 
+**Note:** For the bin files to work on Windows you need to run installDist on a Windows machine as JavaFX depends on native libs
 
 Screenshot:<br/>
 ![](screen1.png)
