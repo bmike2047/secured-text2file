@@ -22,7 +22,7 @@ To generate the bin files use the following gradle tasks and check the ./build f
 installDist for a java distribution.<br/>
 jlinkZip to generate native OS executable.
 
-**Note:**  To skip building and run directly on your computer install JDK17+ and run the script file inside ./dist/<your-OS>/bin folder
+**Note:**  To skip building and run directly on your computer install JDK17+ and run the script file inside ./dist/your-OS/bin folder
 
 Screenshot:<br/>
 ![](screen1.png)
