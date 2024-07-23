@@ -17,11 +17,17 @@ E.g: Encrypt your drive with bitlocker then use this program to add an extra sec
 4) No network connections
 
 **Usage:**<br/>
-Requires JDK 17.<br/>
-To generate the bin files use the following gradle tasks and check the ./build folder:<br/>
-installDist for a java distribution.<br/>
-jlinkZip to generate native OS executable.
-
+Requires JDK 17<br/>
+To generate the bin files use the following gradle tasks<br/>
+For a java distribution run the command below and check folder: ./build/install/secured-text2file/bin<br/>
+```
+./gradlew clean installDist
+```
+For native OS executable run the command below and check folder: ./build/image/bin
+```
+sudo apt-get install binutils //only for linux
+./gradlew clean jlinkZip 
+```
 **Note:**  To skip building and run directly on your computer install JDK17+ and run the script file inside folder:<br/>
 ./dist/your-OS/secured-text2file-v2/bin/ 
 

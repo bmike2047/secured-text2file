@@ -17,7 +17,7 @@
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
-@rem  secured-text2file-v2 startup script for Windows
+@rem  secured-text2file startup script for Windows
 @rem
 @rem ##########################################################################
 
@@ -32,7 +32,7 @@ set APP_HOME=%DIRNAME%..
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
-@rem Add default JVM options here. You can also use JAVA_OPTS and SECURED_TEXT2FILE_V2_OPTS to pass JVM options to this script.
+@rem Add default JVM options here. You can also use JAVA_OPTS and SECURED_TEXT2FILE_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
 @rem Find java.exe
@@ -68,19 +68,19 @@ goto fail
 @rem Setup the command line
 
 set CLASSPATH=
-set MODULE_PATH=%APP_HOME%\lib\secured-text2file-v2-1.0-SNAPSHOT.jar;%APP_HOME%\lib\zip4j-2.11.2-module.jar;%APP_HOME%\lib\commons-lang3-3.12.0.jar;%APP_HOME%\lib\javafx-fxml-22-win.jar;%APP_HOME%\lib\javafx-controls-22-win.jar;%APP_HOME%\lib\javafx-graphics-22-win.jar;%APP_HOME%\lib\javafx-base-22-win.jar
+set MODULE_PATH=%APP_HOME%\lib\secured-text2file-2.0.jar;%APP_HOME%\lib\zip4j-2.11.5-module.jar;%APP_HOME%\lib\commons-lang3-3.12.0.jar;%APP_HOME%\lib\javafx-fxml-22-win.jar;%APP_HOME%\lib\javafx-controls-22-win.jar;%APP_HOME%\lib\javafx-graphics-22-win.jar;%APP_HOME%\lib\javafx-base-22-win.jar
 
-@rem Execute secured-text2file-v2
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %SECURED_TEXT2FILE_V2_OPTS%  -classpath "%CLASSPATH%" --module-path "%MODULE_PATH%" --module com.secured.text/com.secured.text.SecuredTextApplication %*
+@rem Execute secured-text2file
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %SECURED_TEXT2FILE_OPTS%  -classpath "%CLASSPATH%" --module-path "%MODULE_PATH%" --module secured.text/secured.text.SecuredTextApplication %*
 
 :end
 @rem End local scope for the variables with windows NT shell
 if "%ERRORLEVEL%"=="0" goto mainEnd
 
 :fail
-rem Set variable SECURED_TEXT2FILE_V2_EXIT_CONSOLE if you need the _script_ return code instead of
+rem Set variable SECURED_TEXT2FILE_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
-if  not "" == "%SECURED_TEXT2FILE_V2_EXIT_CONSOLE%" exit 1
+if  not "" == "%SECURED_TEXT2FILE_EXIT_CONSOLE%" exit 1
 exit /b 1
 
 :mainEnd
