@@ -7,7 +7,7 @@ plugins {
 }
 
 
-group 'com.secured.text'
+group 'secured.text'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -27,8 +27,8 @@ tasks.withType(JavaCompile) {
 
 
 application {
-    mainModule = 'com.secured.text'
-    mainClass = 'com.secured.text.SecuredTextApplication'
+    mainModule = 'secured.text'
+    mainClass = 'secured.text.SecuredTextApplication'
 }
 
 javafx {

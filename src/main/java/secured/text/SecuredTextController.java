@@ -1,4 +1,4 @@
-package com.secured.text;
+package secured.text;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class SecuredTextController {
-    public static final Logger LOG = Logger.getLogger("com.secured.text");
+    public static final Logger LOG = Logger.getLogger("secured.text");
     private final static String STATUS = "Status: ";
     @FXML
     private Label statusLabel;

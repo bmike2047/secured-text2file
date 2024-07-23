@@ -1,4 +1,4 @@
-package com.secured.text;
+package secured.text;
 
 import net.lingala.zip4j.model.enums.AesKeyStrength;
 import net.lingala.zip4j.model.enums.CompressionMethod;
@@ -14,7 +14,7 @@ import java.nio.file.Paths;
 import java.util.logging.Logger;
 
 public class ZipUtilsTest {
-    public static final Logger L = Logger.getLogger("com.secured.text");
+    public static final Logger L = Logger.getLogger("secured.text");
     @Test
     void testEncryptionBiDirectional() throws Exception {
         Path path = Paths.get("test.zip");

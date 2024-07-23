@@ -1,4 +1,4 @@
-package com.secured.text;
+package secured.text;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
