@@ -1,4 +1,4 @@
-Secured Text 2 File v2
+Secured Text 2 File
 --
 **Description**<br/>
 Secure store any text to an AES256 hidden zip file. (binaries provided also, see end of this file) <br/>
