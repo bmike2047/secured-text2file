@@ -42,7 +42,7 @@ extraJavaModuleInfo {
 
 
 dependencies {
-    implementation 'net.lingala.zip4j:zip4j:2.11.2'
+    implementation 'net.lingala.zip4j:zip4j:2.11.5'
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
