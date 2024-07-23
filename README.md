@@ -26,7 +26,7 @@ For a java distribution run the command below and check folder: ./build/install/
 For native OS executable run the command below and check folder: ./build/image/bin
 ```
 sudo apt-get install binutils //only for linux
-./gradlew clean jlinkZip 
+./gradlew clean jlink 
 ```
 **Note:**  To skip building and run directly on your computer install JDK17+ and run the script file inside folder:<br/>
 ./dist/your-OS/secured-text2file-v2/bin/ 
