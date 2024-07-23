@@ -28,8 +28,11 @@ For native OS executable run the command below and check folder: ./build/image/b
 sudo apt-get install binutils //only for linux
 ./gradlew clean jlink 
 ```
-**Note:**  To skip building and run directly on your computer install JDK17+ and run the script file inside folder:<br/>
-./dist/your-OS/secured-text2file-v2/bin/ 
+
+> [!TIP]
+> o skip building and run directly on your computer install JDK17+ and run the script file inside folder:
+> ./dist/your-OS/secured-text2file-v2/bin/
+
 
 Screenshot:<br/>
-![](screen1.png)
+![Screenshot](screen1.png)
