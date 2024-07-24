@@ -19,6 +19,7 @@ public class SecuredTextApplication extends Application {
 
     /**
      * Main entry point.
+     *
      * @param args
      */
     public static void main(String[] args) {
