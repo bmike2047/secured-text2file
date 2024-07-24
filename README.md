@@ -11,13 +11,13 @@ This eliminates the step to delete the raw sensible file after visualization/dec
 
 E.g: Encrypt your drive with bitlocker then use this program to add an extra security layer for your important text/passwords.
 
-### Features summary:
+### Features summary
 1) No need for external editor to view your decrypted text
 2) No need to delete your decrypted text after you've read it
 3) Leaves no footprint like temp files
 4) No network connections
 
-### Usage:
+### Usage
 Requires JDK 17<br/>
 To generate the bin files use the following gradle tasks<br/>
 For a java distribution run the command below and check folder: ./build/install/secured-text2file/bin<br/>
@@ -35,5 +35,5 @@ sudo apt-get install binutils //only for linux
 > ***./dist/your-OS/secured-text2file-v2/bin/***
 
 
-### Screenshot:
+### Screenshot
 ![](assets/images/screen1.png)
