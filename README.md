@@ -1,5 +1,6 @@
 Secured Text 2 File
 --
+![](assets/images/logo1.png)
 ### Description<br/>
 Secure store any text to an AES256 hidden zip file. (binaries provided also, see end of this file) <br/>
 Can be used as a password manager.<br/>
