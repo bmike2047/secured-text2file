@@ -32,7 +32,7 @@ sudo apt-get install binutils //only for linux
 
 > [!TIP]
 > To skip building and run directly on your computer install JDK17+ and run the script file inside folder:<br/>
-> ***./dist/your-OS/secured-text2file-v2/bin/***
+> ***./dist/your-OS/secured-text2file/bin/***
 
 
 ### Screenshot
