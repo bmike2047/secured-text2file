@@ -24,7 +24,7 @@
          </HBox.margin>
       </Label>
       <PasswordField fx:id="passwordField"/>
-      <Button onAction="#onSubmitButtonClick" text="Submit">
+      <Button onAction="#onSubmitButtonClick" text="Submit" fx:id="submit">
          <HBox.margin>
             <Insets left="15.0"/>
          </HBox.margin>

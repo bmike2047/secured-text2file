@@ -93,7 +93,7 @@ public class SecuredTextController {
     private void error(final Exception ex) {
         statusLabel.setText(STATUS + ex.getMessage());
         statusLabel.setTextFill(Color.web("#fa1105"));
-        LOG.log(Level.SEVERE, ex.toString(), ex);
+        LOG.log(Level.SEVERE, ex.toString());
     }
 
 }
