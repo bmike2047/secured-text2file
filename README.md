@@ -34,6 +34,9 @@ sudo apt-get install binutils //only for linux
 > To skip building and run directly on your computer install JDK17+ and run the script file inside folder:<br/>
 > ***./dist/your-OS/secured-text2file/bin/***
 
+> [!TIP]
+> I case you have older JDK version than JDK 17 and you are using IntelliJIDEA as IDE make sure Gradle JVM is set to JDK 17 in:<br/>
+> File | Settings | Build, Execution, Deployment | Build Tools | Gradle  -> Gradle JVM
 
 ### Screenshot
 ![](assets/images/screen1.png)
