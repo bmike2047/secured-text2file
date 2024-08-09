@@ -19,7 +19,10 @@ E.g: Encrypt your drive with bitlocker then use this program to add an extra sec
 
 ### Usage
 Requires JDK 17<br/>
-To generate the bin files use the following gradle tasks<br/>
+To run the project use the following command:<br/>
+```
+./gradlew clean run
+```
 For a java distribution run the command below and check folder: ./build/install/secured-text2file/bin<br/>
 ```
 ./gradlew clean installDist
@@ -34,6 +37,9 @@ sudo apt-get install binutils //only for linux
 > To skip building and run directly on your computer install JDK17+ and run the script file inside folder:<br/>
 > ***./dist/your-OS/secured-text2file/bin/***
 
+> [!TIP]
+> I case you have older JDK version than JDK 17 and you are using IntelliJIDEA as IDE make sure Gradle JVM is set to JDK 17 in:<br/>
+> File | Settings | Build, Execution, Deployment | Build Tools | Gradle  -> Gradle JVM
 
 ### Screenshot
 ![](assets/images/screen1.png)
