@@ -1,7 +1,10 @@
 Secured Text 2 File
 --
 ![](assets/images/logo1.png)
-### Description<br/>
+### Code repository
+<a href="https://github.com/bmike2047/secured-text2file">https://github.com/bmike2047/secured-text2file</a>
+
+### Description
 Secure store any text to an AES256 hidden zip file. (binaries provided also, see end of this file) <br/>
 Can be used as a password manager.<br/>
 Output file defaults to info.bin in the current directory. This can be changed if needed. <br/>
@@ -12,10 +15,10 @@ This eliminates the step to delete the raw sensible file after visualization/dec
 E.g: Encrypt your drive with bitlocker then use this program to add an extra security layer for your important text/passwords.
 
 ### Features summary
-1) No need for external editor to view your decrypted text
-2) No need to delete your decrypted text after you've read it
-3) Leaves no footprint like temp files
-4) No network connections
+* No need for external editor to view your decrypted text 
+*  No need to delete your decrypted text after you've read it
+*  Leaves no footprint like temp files
+*  No network connections
 
 ### Usage
 Requires JDK 17<br/>
