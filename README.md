@@ -5,7 +5,7 @@ Secured Text 2 File
 <a href="https://github.com/bmike2047/secured-text2file">https://github.com/bmike2047/secured-text2file</a>
 
 ### Description
-Secure store any text to an AES256 hidden zip file. (binaries provided also, see end of this file) <br/>
+Secure store any text to an AES256 hidden zip file.<br/>
 Can be used as a password manager.<br/>
 Output file defaults to info.bin in the current directory. This can be changed if needed. <br/>
 While there are a lot of self-extracting archive managers with encryption, this little 
@@ -35,10 +35,6 @@ For native OS executable run the command below and check folder: ./build/image/b
 sudo apt-get install binutils //only for linux
 ./gradlew clean jlink 
 ```
-
-> [!TIP]
-> To skip building and run directly on your computer install JDK17+ and run the script file inside folder:<br/>
-> ***./dist/your-OS/secured-text2file/bin/***
 
 > [!TIP]
 > I case you have older JDK version than JDK 17 and you are using IntelliJIDEA as IDE make sure Gradle JVM is set to JDK 17 in:<br/>
