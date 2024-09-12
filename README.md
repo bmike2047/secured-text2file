@@ -1,8 +1,6 @@
 Secured Text 2 File
 --
 ![](assets/images/logo1.png)
-### Code repository
-<a href="https://github.com/bmike2047/secured-text2file">https://github.com/bmike2047/secured-text2file</a>
 
 ### Description
 Secure store any text to an AES256 hidden zip file.<br/>
