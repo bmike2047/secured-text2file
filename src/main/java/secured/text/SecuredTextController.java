@@ -15,24 +15,48 @@ import java.nio.file.Paths;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Main MVC controller.
+ */
 public class SecuredTextController {
     public static final Logger LOG = Logger.getLogger("secured.text");
+    /**
+     * Helper status string
+     */
     private final static String STATUS = "Status: ";
+    /**
+     * Label for status
+     */
     @FXML
     private Label statusLabel;
+    /**
+     * Encrypt radio button
+     */
     @FXML
     private RadioButton radioEncrypt;
+    /**
+     * Decrypt radio button
+     */
     @FXML
     private RadioButton radioDecrypt;
+    /**
+     * Password field
+     */
     @FXML
     private PasswordField passwordField;
+    /**
+     * Zip filename
+     */
     @FXML
     private TextField fileNameField;
+    /**
+     * Text area for the zip file text
+     */
     @FXML
     private TextArea textArea;
 
     /**
-     * Setup components before use.
+     * Initialize components before use.
      */
     @FXML
     private void initialize() {
@@ -46,7 +70,8 @@ public class SecuredTextController {
     }
 
     /**
-     * Submit button logic
+     * Submit button logic.
+     * Encryption/decryption of zip file is performed here.
      */
     @FXML
     protected void onSubmitButtonClick() {

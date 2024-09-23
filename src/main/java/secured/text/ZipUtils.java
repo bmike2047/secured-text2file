@@ -12,13 +12,26 @@ import java.io.*;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 /**
- * This class is responsible for encrypting/decrypting the target file using AES
+ * This class is responsible for encrypting/decrypting the target file using AES256
  */
 public class ZipUtils {
 
+    /**
+     * Write a text to an encrypted zip file.
+     *
+     * @param outputZipFile     output zip file
+     * @param textToSave        text to save to file
+     * @param insideFileName    filename inside the zip file
+     * @param password          zip file password
+     * @param compressionMethod zip file compression method
+     * @param encrypt           toggle encrypt
+     * @param encryptionMethod  zip file encryption method
+     * @param aesKeyStrength    zip file aes key strength
+     * @throws IOException thrown in case of errors
+     */
     public static void writeEncryptedFile(File outputZipFile, String textToSave, String insideFileName, char[] password,
-                                   CompressionMethod compressionMethod, boolean encrypt,
-                                   EncryptionMethod encryptionMethod, AesKeyStrength aesKeyStrength)
+                                          CompressionMethod compressionMethod, boolean encrypt,
+                                          EncryptionMethod encryptionMethod, AesKeyStrength aesKeyStrength)
             throws IOException {
         ZipParameters zipParameters = buildZipParameters(compressionMethod, encrypt, encryptionMethod, aesKeyStrength);
         byte[] buff = new byte[4096];
@@ -35,6 +48,14 @@ public class ZipUtils {
         }
     }
 
+    /**
+     * Helper for the zip output stream.
+     *
+     * @param outputZipFile zip stream filename
+     * @param encrypt       zip stream toggle encrypt
+     * @param password      zip stream password
+     * @return ZipOutputStream
+     */
     private static ZipOutputStream initializeZipOutputStream(File outputZipFile, boolean encrypt, char[] password)
             throws IOException {
         FileOutputStream fos = new FileOutputStream(outputZipFile);
@@ -44,7 +65,13 @@ public class ZipUtils {
         return new ZipOutputStream(fos);
     }
 
-
+    /**
+     * Read and decrypt the content of an encrypted zip file.
+     *
+     * @param zipFile  zip filename
+     * @param password zip file password
+     * @return Decrypted zip file content
+     */
     public static String readEncryptedFile(File zipFile, char[] password) throws IOException {
         int readLen;
         byte[] readBuffer = new byte[4096];
@@ -63,8 +90,17 @@ public class ZipUtils {
         return outputStream.toString(UTF_8);
     }
 
+    /**
+     * Helper to build zip parameters.
+     *
+     * @param compressionMethod zip file compression method
+     * @param encrypt           toggle encrypt
+     * @param encryptionMethod  zip file encryption method
+     * @param aesKeyStrength    zip file aes key strength
+     * @return ZipParameters
+     */
     private static ZipParameters buildZipParameters(CompressionMethod compressionMethod, boolean encrypt,
-                                             EncryptionMethod encryptionMethod, AesKeyStrength aesKeyStrength) {
+                                                    EncryptionMethod encryptionMethod, AesKeyStrength aesKeyStrength) {
         ZipParameters zipParameters = new ZipParameters();
         zipParameters.setCompressionMethod(compressionMethod);
         zipParameters.setEncryptionMethod(encryptionMethod);

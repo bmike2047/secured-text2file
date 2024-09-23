@@ -7,6 +7,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Main entry point class.
+ */
 public class SecuredTextApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
@@ -18,9 +21,9 @@ public class SecuredTextApplication extends Application {
     }
 
     /**
-     * Main entry point.
+     * Main entry point method.
      *
-     * @param args
+     * @param args input arguments
      */
     public static void main(String[] args) {
         launch();

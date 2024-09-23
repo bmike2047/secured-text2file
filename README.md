@@ -3,7 +3,7 @@ Secured Text 2 File
 ![](assets/images/logo1.png)
 
 ### Description
-Secure store any text to an AES256 hidden zip file.<br/>
+Secure store any text to an AES256 encrypted zip file.<br/>
 Can be used as a password manager.<br/>
 Output file defaults to info.bin in the current directory. This can be changed if needed. <br/>
 While there are a lot of self-extracting archive managers with encryption, this little 
